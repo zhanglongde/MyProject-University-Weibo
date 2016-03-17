@@ -1,0 +1,23 @@
+﻿/*reset*/
+* { padding: 0; margin: 0; }
+ul,li{list-style:none}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:12px;font-weight:normal}
+a,textarea,input{outline:none;resize:none;}
+
+
+/*公用*/
+body { font-size: 12px; }
+a{ color:#10638f; text-decoration:none;}
+.f-l{float:left}
+.f-r{float:right}
+.clear{clear:both;}
+.hide{display:none}
+.show{display:block}
+.v{ vertical-align:middle;}
+.error{ color:#f60}
+.tip-0{color:#888}
+.tip-1{width:478px; }
+
+

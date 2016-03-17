@@ -1,0 +1,106 @@
+﻿body 
+{
+	/*background-image:url( ../image1/body_background.jpg);
+	background-repeat:repeat-y;*/
+	background-attachment:fixed;
+	background-position:0px 0px;
+	background:#82A886;
+	
+	font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;    
+    padding: 0px;
+    color: #696969;
+}
+.errormt {display:inline; background: none repeat scroll 0 0 #FFEAEA;border: 1px solid #E5C3C4;
+    color: #82A886;height: 37px;width:60px;line-height: 23px;position: absolute;white-space: nowrap;}
+.errormt {margin-top: 3px;background:#FFEAEA;font-size:small;position:relative;}
+#bodyDiv
+{    
+  margin-left:158px;
+  margin-right:158px;
+  
+  position:absolute;
+  z-index :1;     
+}
+#bottomDiv
+{
+	position:absolute;
+	z-index:5;
+	margin-top:800px;	
+}
+#information_box
+{
+	position:absolute;
+	z-index:5;
+	margin-left:20px;
+	margin-top:170px;
+	
+	font-size:large;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;    
+    padding: 0px;
+    color: #696969;
+}
+
+#headPictureDiv
+{
+ margin-top:10px;
+ margin-left:48px;
+ position :absolute;
+ z-index :2;
+}
+#logoDiv
+{
+	margin-top:90px;
+	margin-left:62px;
+	position:absolute;
+	z-index:5;
+}
+#weiboBiaoyuDiv
+{
+	margin-top:129px;
+	margin-left:230px;
+	position:absolute;
+	z-index:3;
+}
+.bg{background:#E1D6B6;}
+
+
+
+
+.noticeStar
+{
+	color:Red;
+	font-weight:bolder;
+
+}
+#weiboLogo
+{
+ width:110px;
+ height:60px;
+}
+
+.reg_tab {
+    background-position: 0 40px;
+    background-repeat: repeat-x;
+    height: 55px;
+    width: 815px;
+    text-align: center;
+    margin-top:20px;
+      
+   
+}
+
+a.reg_tab_a:hover {
+    background-position: 0 -180px;
+    color: #FFFFFF;
+}
+	
+	
+#submitNewUser
+{
+	background-image:url(../themes/default/imageRegister/立即开通.jpg);
+	width:165px;
+	height:55px;
+
+}
+	

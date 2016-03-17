@@ -1,0 +1,90 @@
+﻿/*reset*/
+* { padding: 0; margin: 0; }
+ul,li{list-style:none}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:12px;font-weight:normal}
+a,textarea,input{outline:none;resize:none;}
+
+
+/*公用*/
+body,button,input,select,textarea{ font: 12px/1.125 Arial,Helvetica,sana-serif; }
+body,.W_texta, a.W_texta{color:#444444;}
+.W_texta, a.W_texta{cursor:default;}
+a{ color:#10638f; text-decoration:none;}
+a:hover{border-bottom:1px  solid}
+li{list-style:none outside none;}
+.f-l{float:left}
+.f-r{float:right}
+.clear{clear:both;}
+.hide{display:none}
+.show{display:block}
+.v{ vertical-align:middle;}
+.error{ color:#f60}
+.tip-0{color:#888}
+.tip-1{width:478px; }
+.time{color:#999}
+.wrap{padding:10px;}
+
+/*布局i*/
+
+body{text-align:center;background-color:#B2E9F0;color:#333333;}
+.MB_wrap{margin:0 auto;min-height:500px;width:956px;}
+.login_top{height:97px;position:relative;}
+.login_body{clear:both;height:820px;position:relative;}
+.bodybt{background:#D6F3F7;padding:15px 10px 15px 26px;position:relative;width:920px;top: 0px;
+	left: 0px;
+}
+.clear,.claerit{clear:both;margin:0;padding:0;}
+
+/*  login_l */
+.login_body .login_l{float:left;}
+.talking strong{color:#CCFFCC;float:left;height:36px;line-height:36px;padding:0 10px 0 45px;}
+table a{display:block;border:1px solid #FFFFFF;}
+table{background:#FEFAF2;width:250px;padding-left:10px;}
+
+.feed{ padding-top:210px;float:right;width:430px;}
+.feed li{padding:4px;background:#FEFAF2;}
+.feed li{border-bottom:1px dotted #ccc}
+.feed li .head{display:inline;float:left;}
+#usingAndFunnyPeople{padding-top:210px;float:left;}
+
+li .content{line-height: 1.5;margin-left: 60px;}
+li .content .pic{padding:8px 0}
+.feed li .content .pic-expand{border:1px solid #eee;padding:8px;background:#f3f3f3}
+.feed li .content .pic-expand p{padding:4px;font-size:12px}
+
+.feed li .content p{color:#555;font-size:14px}
+.feed .time{float:left;}
+.head img {
+    height: 56px;
+    width: 56px;
+}
+
+
+/*  login_r */
+.login_body .login_r{background:#C0EEFF; height:auto;overflow:hidden;padding-right:3px;position:absolute;right:2px;top:-3px;width:267px;}
+.login_body .login_r .login_item{height:355px;padding-top:30px;}
+.login_item .regtop{margin:0 0 20px 30px;text-align:center;width:200px;}
+.login_item .loginform{margin:0 0 0 30px;width:194px;}
+.login_item .regbtn{ color:#FFFFFF;font-size:20px;font-weight:900; background:#9CE129;border:1px solid #608924; display:block;height:52px;width:196px;line-height:50px;text-align:center;}
+.login_item .input_bg{position:relative; height:31px;margin-bottom:10px;width:194px;}
+.login_item .input_bg input{border:medium none;height:30px;line-height:20px;margin:2px 0 0 4px;width:184px;}
+.login_item .setting{color:#666666;height:24px;line-height:24px;}
+.login_item .signin{margin-top:8px;text-align:center;}
+#login_submit_btn{color:#777777; font-size:15px;font-weight:700;background:#F1F1F1;border:1px solid #F0F0F0;display:inline-block;height:30px;width:97px;line-height:30px;}
+.usnANDpwd{color:#999999;}
+
+/*登入正确与否提示框#LabelHint*/
+.login_item .labelLogin{height:25px;line-height:25px;margin-top:12px; display:block;color:#CC0000;background:#FFEAEA;}
+.loginform .hezuo_login{left:-10px;margin:25px -20px 0 0;position:relative;}
+.hezuo_login, .hezuo_login *{verticla-align:middle;}
+.hezuo_login strong{color:#666666;display:block;padding-bottom:6px;}
+
+
+
+
+
+
+
+

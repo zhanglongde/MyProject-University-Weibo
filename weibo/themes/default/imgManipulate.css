@@ -1,0 +1,19 @@
+﻿.rot_box  img {border:none;}
+.rot_box  ul, li {list-style:none;}
+.rot_box  .l {float:left;}
+.rot_box  .r {float:right;}
+.rot_box  .fix {overflow:hidden;zoom:1;}
+.rot_box {width:512px;margin:0 auto;}
+.rot_box  .image_box {text-align:center;}
+.rot_box  .image_box img {margin-top:-150px;margin-top:0\9;}
+.rot_box p a {margin-left:20px;}
+.rot_box  .thumbnail {cursor:url("big.cur"), auto;}
+.rot_box  .rotImg,.canvas{cursor:url("small.cur"), auto;}
+
+/*
+.image_box{background:url(loading.gif) center center no-repeat;}
+*/
+.rot_box  .rot_0{-moz-transform:rotate(0deg); -webkit-transform:rotate(0deg); transform:rotate(0deg); filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);}
+.rot_box  .rot_90{-moz-transform:rotate(90deg); -webkit-transform:rotate(90deg); transform:rotate(90deg); filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);}
+.rot_box  .rot_180{-moz-transform:rotate(180deg); -webkit-transform:rotate(180deg); transform:rotate(180deg); filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);}
+.rot_box  .rot_270{-moz-transform:rotate(270deg); -webkit-transform:rotate(270deg); transform:rotate(270deg); filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}

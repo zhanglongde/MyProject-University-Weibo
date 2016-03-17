@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70B1F13B-20FF-41FE-AE74-F0E418E31D2A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>weibo</RootNamespace>
+    <AssemblyName>weibo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\weiboUser.mdf" />
+    <Content Include="App_Data\weiboUser_log.ldf">
+      <DependentUpon>weiboUser.mdf</DependentUpon>
+    </Content>
+    <Content Include="comcernfan.aspx" />
+    <Content Include="personInfSet.aspx" />
+    <Content Include="script\concernfanDefault.js" />
+    <Content Include="script\emotions\jquery-1.3.2.min.js" />
+    <Content Include="script\emotions\jquery.emotions.js" />
+    <Content Include="script\checkPassageNo.js" />
+    <Content Include="script\emotions\emotions.js" />
+    <Content Include="script\fancybox.js" />
+    <Content Include="script\imgManipulate\excanvas.js" />
+    <Content Include="script\imgManipulate\imgManipulate.js" />
+    <Content Include="script\imgManipulate\prototype.js" />
+    <Content Include="script\jquery.fancybox-1.3.1.pack.js" />
+    <Content Include="script\jquery.livequery.js" />
+    <Content Include="script\jquery.nivo.slider.pack.js" />
+    <Content Include="script\jquery.qqFace.js" />
+    <Content Include="script\jquery.qqFace.min.js" />
+    <Content Include="script\personInfSet.js" />
+    <Content Include="script\新浪微博头像弹出层效果.js" />
+    <Content Include="themes\default\concernfan.css" />
+    <Content Include="themes\default\concernfan\searchUserImg.jpg" />
+    <Content Include="themes\default\emotions\1.gif" />
+    <Content Include="themes\default\emotions\10.gif" />
+    <Content Include="themes\default\emotions\100.gif" />
+    <Content Include="themes\default\emotions\101.gif" />
+    <Content Include="themes\default\emotions\102.gif" />
+    <Content Include="themes\default\emotions\103.gif" />
+    <Content Include="themes\default\emotions\104.gif" />
+    <Content Include="themes\default\emotions\105.gif" />
+    <Content Include="themes\default\emotions\109.gif" />
+    <Content Include="themes\default\emotions\11.gif" />
+    <Content Include="themes\default\emotions\110.gif" />
+    <Content Include="themes\default\emotions\111.gif" />
+    <Content Include="themes\default\emotions\112.gif" />
+    <Content Include="themes\default\emotions\113.gif" />
+    <Content Include="themes\default\emotions\114.gif" />
+    <Content Include="themes\default\emotions\12.gif" />
+    <Content Include="themes\default\emotions\13.gif" />
+    <Content Include="themes\default\emotions\14.gif" />
+    <Content Include="themes\default\emotions\15.gif" />
+    <Content Include="themes\default\emotions\16.gif" />
+    <Content Include="themes\default\emotions\17.gif" />
+    <Content Include="themes\default\emotions\18.gif" />
+    <Content Include="themes\default\emotions\19.gif" />
+    <Content Include="themes\default\emotions\2.gif" />
+    <Content Include="themes\default\emotions\20.gif" />
+    <Content Include="themes\default\emotions\21.gif" />
+    <Content Include="themes\default\emotions\22.gif" />
+    <Content Include="themes\default\emotions\23.gif" />
+    <Content Include="themes\default\emotions\24.gif" />
+    <Content Include="themes\default\emotions\25.gif" />
+    <Content Include="themes\default\emotions\26.gif" />
+    <Content Include="themes\default\emotions\27.gif" />
+    <Content Include="themes\default\emotions\28.gif" />
+    <Content Include="themes\default\emotions\29.gif" />
+    <Content Include="themes\default\emotions\3.gif" />
+    <Content Include="themes\default\emotions\30.gif" />
+    <Content Include="themes\default\emotions\31.gif" />
+    <Content Include="themes\default\emotions\32.gif" />
+    <Content Include="themes\default\emotions\33.gif" />
+    <Content Include="themes\default\emotions\34.gif" />
+    <Content Include="themes\default\emotions\35.gif" />
+    <Content Include="themes\default\emotions\36.gif" />
+    <Content Include="themes\default\emotions\37.gif" />
+    <Content Include="themes\default\emotions\38.gif" />
+    <Content Include="themes\default\emotions\39.gif" />
+    <Content Include="themes\default\emotions\4.gif" />
+    <Content Include="themes\default\emotions\40.gif" />
+    <Content Include="themes\default\emotions\41.gif" />
+    <Content Include="themes\default\emotions\42.gif" />
+    <Content Include="themes\default\emotions\43.gif" />
+    <Content Include="themes\default\emotions\44.gif" />
+    <Content Include="themes\default\emotions\45.gif" />
+    <Content Include="themes\default\emotions\46.gif" />
+    <Content Include="themes\default\emotions\47.gif" />
+    <Content Include="themes\default\emotions\48.gif" />
+    <Content Include="themes\default\emotions\5.gif" />
+    <Content Include="themes\default\emotions\6.gif" />
+    <Content Include="themes\default\emotions\69.gif" />
+    <Content Include="themes\default\emotions\7.gif" />
+    <Content Include="themes\default\emotions\8.gif" />
+    <Content Include="themes\default\emotions\9.gif" />
+    <Content Include="themes\default\emotions\pirate_2.gif" />
+    <Content Include="themes\default\face\1.gif" />
+    <Content Include="themes\default\face\10.gif" />
+    <Content Include="themes\default\face\11.gif" />
+    <Content Include="themes\default\face\12.gif" />
+    <Content Include="themes\default\face\13.gif" />
+    <Content Include="themes\default\face\14.gif" />
+    <Content Include="themes\default\face\15.gif" />
+    <Content Include="themes\default\face\16.gif" />
+    <Content Include="themes\default\face\17.gif" />
+    <Content Include="themes\default\face\18.gif" />
+    <Content Include="themes\default\face\19.gif" />
+    <Content Include="themes\default\face\2.gif" />
+    <Content Include="themes\default\face\20.gif" />
+    <Content Include="themes\default\face\21.gif" />
+    <Content Include="themes\default\face\22.gif" />
+    <Content Include="themes\default\face\23.gif" />
+    <Content Include="themes\default\face\24.gif" />
+    <Content Include="themes\default\face\25.gif" />
+    <Content Include="themes\default\face\26.gif" />
+    <Content Include="themes\default\face\27.gif" />
+    <Content Include="themes\default\face\28.gif" />
+    <Content Include="themes\default\face\29.gif" />
+    <Content Include="themes\default\face\3.gif" />
+    <Content Include="themes\default\face\30.gif" />
+    <Content Include="themes\default\face\31.gif" />
+    <Content Include="themes\default\face\32.gif" />
+    <Content Include="themes\default\face\33.gif" />
+    <Content Include="themes\default\face\34.gif" />
+    <Content Include="themes\default\face\35.gif" />
+    <Content Include="themes\default\face\36.gif" />
+    <Content Include="themes\default\face\37.gif" />
+    <Content Include="themes\default\face\38.gif" />
+    <Content Include="themes\default\face\39.gif" />
+    <Content Include="themes\default\face\4.gif" />
+    <Content Include="themes\default\face\40.gif" />
+    <Content Include="themes\default\face\41.gif" />
+    <Content Include="themes\default\face\42.gif" />
+    <Content Include="themes\default\face\43.gif" />
+    <Content Include="themes\default\face\44.gif" />
+    <Content Include="themes\default\face\45.gif" />
+    <Content Include="themes\default\face\46.gif" />
+    <Content Include="themes\default\face\47.gif" />
+    <Content Include="themes\default\face\48.gif" />
+    <Content Include="themes\default\face\49.gif" />
+    <Content Include="themes\default\face\5.gif" />
+    <Content Include="themes\default\face\50.gif" />
+    <Content Include="themes\default\face\51.gif" />
+    <Content Include="themes\default\face\52.gif" />
+    <Content Include="themes\default\face\53.gif" />
+    <Content Include="themes\default\face\54.gif" />
+    <Content Include="themes\default\face\55.gif" />
+    <Content Include="themes\default\face\56.gif" />
+    <Content Include="themes\default\face\57.gif" />
+    <Content Include="themes\default\face\58.gif" />
+    <Content Include="themes\default\face\59.gif" />
+    <Content Include="themes\default\face\6.gif" />
+    <Content Include="themes\default\face\60.gif" />
+    <Content Include="themes\default\face\61.gif" />
+    <Content Include="themes\default\face\62.gif" />
+    <Content Include="themes\default\face\63.gif" />
+    <Content Include="themes\default\face\64.gif" />
+    <Content Include="themes\default\face\65.gif" />
+    <Content Include="themes\default\face\66.gif" />
+    <Content Include="themes\default\face\67.gif" />
+    <Content Include="themes\default\face\68.gif" />
+    <Content Include="themes\default\face\69.gif" />
+    <Content Include="themes\default\face\7.gif" />
+    <Content Include="themes\default\face\70.gif" />
+    <Content Include="themes\default\face\71.gif" />
+    <Content Include="themes\default\face\72.gif" />
+    <Content Include="themes\default\face\73.gif" />
+    <Content Include="themes\default\face\74.gif" />
+    <Content Include="themes\default\face\75.gif" />
+    <Content Include="themes\default\face\8.gif" />
+    <Content Include="themes\default\face\9.gif" />
+    <Content Include="themes\default\headImage\default.jpg" />
+    <Content Include="themes\default\headImage\男默认头像.jpg" />
+    <Content Include="themes\default\images\main-images\ad1.jpg" />
+    <Content Include="themes\default\images\main-images\ad2.jpg" />
+    <Content Include="themes\default\images\main-images\ad3.jpg" />
+    <Content Include="themes\default\images\main-images\ad\arrows.png" />
+    <Content Include="themes\default\images\main-images\ad\bullets.png" />
+    <Content Include="themes\default\images\main-images\ad\loading.gif" />
+    <Content Include="themes\default\images\新浪弹出层效果.jpg" />
+    <Content Include="themes\default\imgManipulate.css" />
+    <Content Include="themes\default\imgManipulate\big.cur" />
+    <Content Include="themes\default\imgManipulate\loading.gif" />
+    <Content Include="themes\default\imgManipulate\mm1.jpg" />
+    <Content Include="themes\default\imgManipulate\small.cur" />
+    <Content Include="themes\default\nivo-slider.css" />
+    <Content Include="themes\default\qqFace.css" />
+    <Content Include="themes\default\weiboLoginPage\login_l.jpg" />
+    <Content Include="themes\default\weiboLoginPage\regbtnimg.jpg" />
+    <Content Include="themes\default\弹出层效果\fancybox.css" />
+    <Content Include="themes\default\弹出层效果\images\dialog_bg.jpg" />
+    <Content Include="themes\default\弹出层效果\images\dialog_cb.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_closebtn.gif" />
+    <Content Include="themes\default\弹出层效果\images\dialog_closebtn.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_closebtn_over.gif" />
+    <Content Include="themes\default\弹出层效果\images\dialog_closebtn_over.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_ct.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_footercenter.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_footerleft.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_footerright.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_lb.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_lt.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_mc.gif" />
+    <Content Include="themes\default\弹出层效果\images\dialog_mc.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_mlb.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_mlm.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_mlt.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_mrb.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_mrm.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_mrt.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_rb.png" />
+    <Content Include="themes\default\弹出层效果\images\dialog_rt.png" />
+    <Content Include="themes\default\弹出层效果\images\icon_alert.gif" />
+    <Content Include="themes\default\弹出层效果\images\icon_dialog.gif" />
+    <Content Include="themes\default\弹出层效果\images\icon_query.gif" />
+    <Content Include="themes\default\弹出层效果\images\snap.png" />
+    <Content Include="themes\default\弹出层效果\images\window.gif" />
+    <Content Include="themes\default\弹出层效果\tansferweibo.css" />
+    <Content Include="themes\default\personInfSet.css" />
+    <Content Include="weiboLoginPage.aspx" />
+    <Content Include="themes\default\weiboLoginPage.css" />
+    <Content Include="weiHomepage.htm" />
+    <Content Include="script\default.js" />
+    <Content Include="script\issuePassage.js" />
+    <Content Include="script\lib\jquery-1.4.1-vsdoc.js" />
+    <Content Include="script\lib\jquery-1.4.1.js" />
+    <Content Include="script\lib\jquery-1.4.1.min.js" />
+    <Content Include="script\lib\jquery.min.js" />
+    <Content Include="script\lib\superfish\hoverIntent.js" />
+    <Content Include="script\lib\superfish\jquery.bgiframe.min.js" />
+    <Content Include="script\lib\superfish\superfish.js" />
+    <Content Include="Global.asax" />
+    <Content Include="themes\default\images\main-images\feed-head-img.jpg" />
+    <Content Include="themes\default\images\main-images\feed_search_img.jpg" />
+    <Content Include="themes\default\images\main-images\medal.jpg" />
+    <Content Include="themes\default\images\main-images\pic-expand.jpg" />
+    <Content Include="themes\default\images\main-images\pic-hide.jpg" />
+    <Content Include="themes\default\images\main-images\search_img.jpg" />
+    <Content Include="themes\default\images\main-images\setskin-pic.jpg" />
+    <Content Include="themes\default\images\main-images\weibo_logo.jpg" />
+    <Content Include="themes\default\index.css" />
+    <Content Include="themes\default\login.css" />
+    <Content Include="themes\default\superfish\superfish-navbar.css" />
+    <Content Include="themes\default\superfish\superfish-vertical.css" />
+    <Content Include="themes\default\superfish\superfish.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="weiboRegister.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addConcern.ashx.cs">
+      <DependentUpon>addConcern.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="checkUserExistence.ashx.cs">
+      <DependentUpon>checkUserExistence.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="comcernfan.aspx.cs">
+      <DependentUpon>comcernfan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comcernfan.aspx.designer.cs">
+      <DependentUpon>comcernfan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delConcern.ashx.cs">
+      <DependentUpon>delConcern.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="get4fans.ashx.cs">
+      <DependentUpon>get4fans.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="getAllConcernsInf.ashx.cs">
+      <DependentUpon>getAllConcernsInf.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="getAllWeibos.ashx.cs">
+      <DependentUpon>getAllWeibos.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="getUserMessage.ashx.cs">
+      <DependentUpon>getUserMessage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Layers\BLLComment.cs" />
+    <Compile Include="Layers\BLLuser.cs" />
+    <Compile Include="Layers\BLLWeiboPassage.cs" />
+    <Compile Include="Layers\commentModel.cs" />
+    <Compile Include="Layers\DALComment.cs" />
+    <Compile Include="Layers\DALFans.cs" />
+    <Compile Include="Layers\DALuser.cs" />
+    <Compile Include="Layers\DALWeiboPassage.cs" />
+    <Compile Include="Layers\SQLHelper.cs" />
+    <Compile Include="Layers\userModel.cs" />
+    <Compile Include="Layers\weiboPassageModel.cs" />
+    <Compile Include="Layers\DALConcerns.cs" />
+    <Compile Include="personInfSet.aspx.cs">
+      <DependentUpon>personInfSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="personInfSet.aspx.designer.cs">
+      <DependentUpon>personInfSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PostComment.ashx.cs">
+      <DependentUpon>PostComment.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PostPassage.ashx.cs">
+      <DependentUpon>PostPassage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="weiboLoginPage.aspx.cs">
+      <DependentUpon>weiboLoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="weiboLoginPage.aspx.designer.cs">
+      <DependentUpon>weiboLoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="weiboRegister.aspx.cs">
+      <DependentUpon>weiboRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="weiboRegister.aspx.designer.cs">
+      <DependentUpon>weiboRegister.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="themes\blue\" />
+    <Folder Include="themes\green\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PostPassage.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="getUserMessage.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="getAllWeibos.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PostComment.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="get4fans.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="addConcern.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="getAllConcernsInf.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="delConcern.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="checkUserExistence.ashx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>22321</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

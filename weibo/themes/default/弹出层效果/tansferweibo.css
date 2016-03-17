@@ -1,0 +1,57 @@
+﻿#btnTransfer{float:right;display:block;width:50px;height:20px;line-height:20px;background:#eee;border:1px solid #ccc;text-align:center;}
+#passageNo0{font-family: Constantia,Georgia;font-weight: 600;}
+.tansfertitle{display:block;}
+
+.W_layer .W_texta, .W_layer a.W_texta {color: #666666;}
+
+.W_layer .content { background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C6C6C6;border-radius: 3px 3px 3px 3px;position: relative;}
+.W_layer .title {background: none repeat scroll 0 0 #F3F3F3;
+    color: #595959;font-size: 14px;height: 30px;line-height: 30px;padding: 0 0 0 20px;vertical-align: middle;}
+.W_layer .W_close {position: absolute;right: 14px; top: 5px;z-index: 2;}
+.W_layer .layer_forward {padding: 0 20px 5px;position: relative;width: 400px;}
+
+.W_layer .layer_forward .tab {margin-top: 15px;}
+.W_layer .tab_bottom .tab_title {
+    font-size: 12px;
+}
+.W_layer .tab .current {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #E8E8E8 #E8E8E8 -moz-use-text-color;
+    border-style: solid solid none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-width: 1px 1px 0;
+    cursor: default;
+    text-decoration: none;
+}
+.W_layer .W_vline {
+    color: #DDDDDD;
+}
+
+.W_layer .W_vline {display: inline-block;text-indent: -1px;}
+
+.layer_forward .forward_content {
+    background: none repeat scroll 0 0 #F3F3F3;
+}
+
+.layer_forward .forward_content, .layer_forward .text_tips {line-height: 18px;
+    margin: 15px 0 5px;overflow: hidden;padding: 6px 10px;width: 380px;word-wrap: break-word;}
+
+.layer_forward .feed_repeat {
+    margin-top: 0;
+}
+.feed_repeat {
+    line-height: 20px;
+}
+.layer_forward .forward_content .unfold {
+    background: url("../../../images/common/ico.png?id=1323328404357") no-repeat scroll 4px -1586px transparent;
+    cursor: pointer;float: right;height: 15px;width: 15px;}
+
+
+
